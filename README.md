@@ -4,11 +4,8 @@ serverless-node-aws-lambda
 
 ## Installation
 
-TODO: Describe the installation process
-
-## Usage
-
-TODO: Write usage instructions
+npm install -g serverless
+serverless config credentials --provider aws --key <AWS_ACCESS_KEY_ID>  --secret <AWS_SECRET_ACCESS_KEY>
 
 ## Contributing
 
@@ -18,14 +15,7 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
 ## Credits
 
-TODO: Write credits
+Team Rocketseat
 
-## License
-
-TODO: Write license
