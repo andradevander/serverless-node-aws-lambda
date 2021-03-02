@@ -1,0 +1,21 @@
+{
+  "name": "nodeless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "optimize.js",
+  "dependencies": {
+    "sharp": "^0.27.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "predeploy-linux": "rm -rf node_modules/sharp && npm install --platform=linux --arch=x64 --target=12.x sharp",
+    "deploy-linux": "serverless deploy -v",
+    "postdeploy-linux": "rm -rf node_modules/sharp && npm install sharp",
+    "predeploy": "rmdir /s /q \"node_modules\\sharp\" && npm install --platform=linux --arch=x64 --target=12.x sharp",
+    "deploy": "serverless deploy -v",
+    "postdeploy": "rmdir /s /q \"node_modules\\sharp\"&& npm install sharp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
