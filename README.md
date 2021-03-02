@@ -5,6 +5,7 @@ serverless-node-aws-lambda
 ## Installation
 
 npm install -g serverless
+
 serverless config credentials --provider aws --key <AWS_ACCESS_KEY_ID>  --secret <AWS_SECRET_ACCESS_KEY>
 
 ## Contributing
